@@ -1848,7 +1848,7 @@ if (psalmList) {
 
 const tituloSalmo = document.getElementById("titulo-salmo")
 
-const textoSalmo = document.getElementById("    ")
+const textoSalmo = document.getElementById("texto-salmo")
 
 const parametros = new URLSearchParams(window.location.search)
 
