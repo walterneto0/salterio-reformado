@@ -1,0 +1,252 @@
+/* RESET */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+
+body{
+
+    font-family:
+    "Segoe UI",
+    Tahoma,
+    Geneva,
+    Verdana,
+    sans-serif;
+    color: #1f2d1f;
+
+    padding: 40px 20px;
+
+    body{
+
+    min-height: 100vh;
+
+    background:
+    linear-gradient(
+        135deg,
+        #f4f8f4 0%,
+        #e8f1ff 50%,
+        #dceeff 100%
+    );
+}
+}
+
+.background1 {
+     background-image: url("./Mask-group.svg");
+    background-repeat: no-repeat;
+    position: fixed;
+    background-size: cover;
+    width: 28vw;
+    height: 85vh;
+    left: 86vw;
+    top: 7vh;
+    
+}
+/* CONTAINER */
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+/* HEADER */
+
+.header{
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.header h1{
+
+    font-size: 3rem;
+
+    color: #1b5e20;
+
+    margin-bottom: 12px;
+
+    letter-spacing: 1px;
+}
+
+.header p{
+
+    color: #557055;
+
+    font-size: 1.05rem;
+}
+
+/* GRID DOS SALMOS */
+
+.psalms-list{
+
+    list-style: none;
+
+    display: grid;
+
+    grid-template-columns:
+    repeat(3, 1fr);
+
+    gap: 18px;
+}
+
+/* LINKS */
+
+.psalms-links{
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-decoration: none;
+
+    background:
+    linear-gradient(
+        135deg,
+        #002042,
+        #007CFF 
+    );
+
+    
+
+    color: white;
+
+    min-height: 75px;
+
+    padding: 20px;
+
+    border-radius: 16px;
+
+    font-size: 1.05rem;
+
+    font-weight: 600;
+
+    transition: 0.3s ease;
+
+    box-shadow:
+    0 8px 18px rgba(0,0,0,0.08);
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+/* DETALHE VISUAL */
+
+.psalms-links::before{
+
+    content: "";
+
+    position: absolute;
+
+    width: 120px;
+
+    height: 120px;
+
+    background:
+    rgba(255,255,255,0.08);
+
+    border-radius: 50%;
+
+    top: -40px;
+
+    right: -30px;
+}
+
+/* HOVER */
+
+.psalms-links:hover{
+
+    transform: translateY(-5px);
+
+    background:
+    linear-gradient(
+        135deg,
+        #145a18,
+        #388e3c
+    );
+
+    box-shadow:
+    0 14px 28px rgba(0,0,0,0.15);
+}
+
+/* TEXTO */
+
+.psalms-links span{
+
+    position: relative;
+
+    z-index: 2;
+}
+
+/* RESPONSIVIDADE */
+
+@media(max-width: 1430px){
+
+    .psalms-list{
+
+        grid-template-columns:
+        repeat(2, 1fr);
+    }
+
+    .background1 {
+     background-image: url("./Mask-group.svg");
+    background-repeat: no-repeat;
+    position: fixed;
+    background-size: cover;
+    width: 36vw;
+    height: 81vh;
+    left: 82vw;
+    top: 7vh;
+    }
+
+}
+
+@media (max-width: 1000px) {
+     .background1 {
+     background-image: url("./Mask-group.svg");
+    background-repeat: no-repeat;
+    position: fixed;
+    background-size: cover;
+    width: 50vw;
+    height: 91vh;
+    left: 72vw;
+    top: 7vh;
+    }
+    
+}
+
+@media(max-width: 640px){
+
+    body{
+        padding: 20px;
+    }
+
+    .header h1{
+        font-size: 2.2rem;
+    }
+
+    .psalms-list{
+        grid-template-columns: 1fr;
+    }
+
+   
+    .background1 {
+     background-image: url("./Mask-group.svg");
+    background-repeat: no-repeat;
+    position: fixed;
+    background-size: cover;
+    width: 56vw;
+    height: 85vh;
+    left: 47vw;
+    top: 7vh;
+    }
+
+}
+
+@media (max-width) {
+    
+}
